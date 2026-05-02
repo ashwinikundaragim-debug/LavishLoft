@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
+const defaultS3BaseUrl = 'https://lavishloft.s3.us-east-1.amazonaws.com';
+const s3BaseUrl = import.meta.env.VITE_S3_BASE_URL?.replace(/\/+$/, '') || defaultS3BaseUrl;
 const heroSlides = [
-  'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80',
-  'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80',
-  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80',
-  'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80',
+  `${s3BaseUrl}/hero-1.jpg`,
+  `${s3BaseUrl}/hero-2.jpg`,
+  `${s3BaseUrl}/hero-3.jpg`,
 ];
 
 export default function Hero() {
