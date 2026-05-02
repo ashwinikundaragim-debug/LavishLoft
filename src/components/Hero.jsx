@@ -50,13 +50,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="w-full max-w-3xl rounded-3xl bg-white/90 p-8 shadow-2xl backdrop-blur-sm md:p-14"
+          className="w-full max-w-3xl rounded-3xl bg-slate-950/10 p-8 shadow-2xl backdrop-blur-2xl md:p-14"
         >
-          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-slate-500">Luxury Interior Design</p>
-          <h1 className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl md:text-6xl">
+          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-white/80">Luxury Interior Design</p>
+          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-6xl">
             Where Luxury Meets Functionality
           </h1>
-          <p className="mt-6 text-base leading-7 text-slate-700 sm:text-lg md:text-xl">
+          <p className="mt-6 text-base leading-7 text-white/80 sm:text-lg md:text-xl">
             Transform your home into a masterpiece with bespoke interiors, intelligent layouts and timeless finishes.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
