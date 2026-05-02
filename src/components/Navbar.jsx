@@ -109,14 +109,6 @@ export default function Navbar() {
                 }`}
               >
                 <span>{item.label}</span>
-                {item.hasDropdown && (
-                  <svg viewBox="0 0 10 6" fill="none" className="h-3.5 w-3.5" aria-hidden="true">
-                    <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                  </svg>
-                )}
-                {isActive && (
-                  <span className="mt-1 h-1.5 w-8 rounded-full bg-amber-400 transition-all duration-300 ease-out animate-slide-in-left group-hover:w-10 group-hover:bg-amber-500" />
-                )}
               </a>
             );
           })}
@@ -166,9 +158,6 @@ export default function Navbar() {
                 >
                   <span className="flex items-center justify-between gap-2">
                     <span>{item.label}</span>
-                    {isActive && (
-                      <span className="h-1.5 w-8 rounded-full bg-amber-400 transition-all duration-300 ease-out animate-slide-in-left group-hover:w-10 group-hover:bg-amber-500" />
-                    )}
                   </span>
                 </a>
               );
